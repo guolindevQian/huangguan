@@ -1,0 +1,44 @@
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval1}}" duration="{{duration}}" circular="{{circular}}" indicator-dots="{{indicator}}"  style='height:500rpx;'>
+  <block wx:for="{{imageurl}}" wx:key="item">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" bindtap="previewImage" data-index='{{index}}'/>
+    </swiper-item>
+  </block>
+</swiper>
+<view style='margin-top:20rpx;background:white;padding-bottom:30rpx;margin-bottom:20rpx;'>
+  <view style='width:100%;text-align:center;padding:20rpx;border-bottom:1rpx solid whitesmoke;color:red;'>关于我们</view>
+  <view style='margin-left:60rpx;margin-right:60rpx;font-size:30rpx;margin-bottom:30rpx;'>
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>{{xiang}}
+  </view>
+  <view style='width:100%;text-align:center;padding:20rpx;border-bottom:1rpx solid whitesmoke;color:red;'>五金配件合作品牌</view>
+  <view wx:for="{{hezuo}}" wx:key="item">
+    <image src='{{item}}' style='width:100%;height:1000rpx;'bindtap="previewImage2" data-index='{{index}}'></image>
+  </view>
+
+   <view style='margin-top:50rpx;magin-bottom:30rpx;font-size:35rpx;margin-left:50rpx;' bindtap='totousu'>
+  <image src='../../icon/contact-select.png'style='width:40rpx;height:40rpx;float:left;'></image>
+  投诉电话：{{tousu}}</view>
+  <view style='margin-top:50rpx;magin-bottom:30rpx;font-size:35rpx;margin-left:50rpx;' bindtap='tophone'>
+  <image src='../../icon/dianhua.png'style='width:40rpx;height:40rpx;float:left;'></image>
+  来电请致：{{phone}}</view>
+
+  <view style='margin:50rpx;font-size:35rpx;'bindtap="click">
+  <image src='../../icon/dingweibiao.png' style='width:30rpx;height:30rpx;'></image>地址：{{address}}
+    
+  </view>
+</view>
+
+<view style='width:100%;'>
+  <image src='{{erwei}}' style='width:100%;height:700rpx;' bindtap="previewImage1" data-index='{{index}}' ></image>
+</view>
+
+<view style='text-align:center;background:white;'>
+  扫一扫上面的二维码图案，加我微信
+</view>
+
+<view style='font-size:25rpx;text-align:center;background:white;padding:20rpx;opacity: 0.5;'bindtap="totianxiphone">
+  <image src='../../icon/contact-select.png'style='width:40rpx;height:40rpx;float:left;'></image>
+  <text>-由深圳信诚天下电子商务有限公司提供技术支持-</text>
+</view>
+

@@ -1,0 +1,57 @@
+<view wx:if="{{aid==3}}">
+  <view wx:for="{{img.jieshao}}" wx:key="item" style='margin:40rpx;font-size:30rpx;'>
+      {{item}}
+    </view>
+  <view>
+
+    <view wx:for="{{img.urlimag}}" wx:key="item" style='margin-bottom:20rpx;'>
+    <view >
+    <image src='{{item}}' style='width:100%;height:1000rpx;'bindtap="previewImage" data-index='{{index}}' data-xi='{{item}}'></image>
+  </view>
+    <view>
+      {{index}}
+    </view>
+    </view>
+    
+  </view>
+
+</view>
+
+<view wx:elif="{{aid==5}}">
+  <view  style='margin:40rpx;font-size:30rpx;'>
+      {{img.jieshao}}
+  </view>
+  <view>
+
+    <view wx:for="{{img.urlimag}}" wx:key="item" style='margin-bottom:20rpx;'>
+      <view >
+      <image src='{{item}}' style='width:100%;height:1400rpx;'bindtap="previewImage" data-index='{{index}}' data-xi='{{item}}'></image>
+      </view>
+      <view>
+        {{index}}
+      </view>
+    </view>
+  
+  </view>
+
+</view>
+
+<view wx:else>
+ <view  style='margin:40rpx;font-size:30rpx;'>
+    {{img.jieshao}}
+  </view>
+
+<view>
+
+  <view wx:for="{{img.urlimag}}" wx:key="item" style='margin-bottom:20rpx;'>
+  <view >
+  <image src='{{item}}' style='width:100%;height:1000rpx;'bindtap="previewImage" data-index='{{index}}' data-xi='{{item}}'></image>
+</view>
+  <view>
+    {{index}}
+  </view>
+  </view>
+  
+</view>
+
+</view>

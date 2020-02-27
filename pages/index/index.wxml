@@ -1,0 +1,77 @@
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval1}}" duration="{{duration}}" circular="{{circular}}" indicator-dots="{{indicator}}"  style='height:500rpx;'>
+  <block wx:for="{{imgUrls}}" wx:key="item">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" bindtap="previewImage" data-index='{{index}}'/>
+    </swiper-item>
+  </block>
+</swiper>
+<view style='width:100%;background:white;height:200rpx;'>
+  <view wx:for="{{imag}}" wx:key="item" class='pinzhi'>
+    <view style='margin-bottom:30rpx;'>
+      <image src='{{item.url}}' style='width:40%;height:80rpx;padding-left:30rpx;'></image>
+    </view>
+    <view style='margin-left:20rpx;font-size:30rpx;'>
+      {{item.name}}
+    </view>
+  </view>
+</view>
+
+<view class='jianjie'>
+  <view class='wujin'>{{wujintext}}</view>
+  <view class='xiangqing'><text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>{{jianjie}}</view>
+  
+</view>
+<view class='h0'>
+  - 生产环境 -
+</view>
+<view>
+  <view wx:for="{{shenchanghuanji}}" wx:key="item" >
+   <view wx:if="{{index==0}}">
+    <image src='{{item}}' style='width:100%;height:700rpx;'data-index='{{index}}' data-xiang="{{item}}" bindtap='previewImage2'></image>
+   </view>
+
+   <view wx:elif="{{index==3||index==4}}">
+    <image src='{{item}}' style='width:100%;height:1000rpx;'data-index='{{index}}' data-xiang="{{item}}" bindtap='previewImage2'></image>
+   </view>
+
+   <view wx:elif="{{index==2}}">
+    <image src='{{item}}' style='width:100%;height:530rpx;'data-index='{{index}}' data-xiang="{{item}}" bindtap='previewImage2'></image>
+   </view>
+   
+    <view wx:else>
+    <image src='{{item}}' style='width:100%;height:150rpx;'data-index='{{index}}' data-xiang="{{item}}" bindtap='previewImage2'></image>
+   </view>
+  </view>
+
+</view>
+
+<view class='dengstyle'>
+  <view class='dengstylekuan' >
+    <view style='color:red;margin-left:30rpx;margin-bottom:10rpx;'>无论炎夏寒冬，金皇冠帮您高效隔热保温.</view>
+
+  </view>
+  <view >
+    <image src='{{imag1[0]}}' class='dengstyletu'bindtap="previewImage1" data-xiang="{{imag1[0]}}" ></image>
+  </view>
+  <view  >
+    <image src='{{imag1[1]}}' class='dengstyletu'bindtap="previewImage1" data-xiang="{{imag1[1]}}"></image>
+  </view>
+  <view class='dengstylekuan' >
+    <view style='color:red;margin-left:30rpx;margin-bottom:20rpx;'>独特的五金槽口设计，顶级欧标系统五金、品质从不将就!</view>
+    
+  </view>
+  <view class='dengstylekuan'>
+    <view style='color:red;margin-left:30rpx;margin-bottom:20rpx;margin-top:120rpx;'>臻品筑家，匠心筑梦！德式极简风格!</view>
+    <view style='opacity:0.5;font-size:25rpx;margin-left:30rpx;margin-right:30rpx'>
+</view>
+  </view>
+  <view >
+    <image src='{{imag1[2]}}' class='dengstyletu' style='height:410rpx;'bindtap="previewImage1" data-xiang="{{imag1[2]}}" ></image>
+  </view>
+</view>
+<view style='font-size:25rpx;text-align:center;background:white;padding:20rpx;opacity: 0.5;'bindtap="totianxiphone">
+  <image src='../../icon/contact-select.png'style='width:40rpx;height:40rpx;float:left;'></image>
+  <text>-由深圳信诚天下电子商务有限公司提供技术支持-</text>
+</view>
+

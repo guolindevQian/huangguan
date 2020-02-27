@@ -1,0 +1,15 @@
+<view>
+
+  <view wx:if="{{aid==6}}">
+    <view wx:for="{{img.urlimag}}" wx:key="item">
+      <image src='{{item}}' style='width:100%;height:900rpx;'bindtap="previewImage" data-index='{{index}}' data-xi='{{item}}'></image>
+      {{index}}
+    </view>
+  </view>
+    <view wx:else>
+      <view class="section">
+      <video class="section1" id="myVideo" src="{{img.video}}"   controls="true" ></video> 
+    </view>
+    </view>
+
+</view>

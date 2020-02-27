@@ -1,0 +1,90 @@
+page{
+  background: whitesmoke;
+}
+.slide-image{
+  width: 100%;
+  height: 100%
+}
+.jianjie{
+  background-size: cover;
+  width: 100%;
+  padding: 20rpx;
+  margin-top: 20rpx;
+  background: white;
+} 
+.wujin{
+  color: #426ab3;
+  width: 400rpx;
+  padding-top: 20rpx;
+  margin-left:40rpx; 
+}
+.xiangqing{
+  font-size: 30rpx;
+  padding:40rpx;
+}
+.h0{
+  background-image: url("https://m.qpic.cn/psb?/V14JKMah3m0Bed/Fpq85oToqbAv*qhLc6hUx54Ek8eIvBLuNeS4AtW7i6s!/b/dFMBAAAAAAAA&bo=CQJRAAAAAAADB3g!&rf=viewer_4");
+  background-size: cover;
+  height: 80rpx;
+  width:100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 20rpx;
+  padding-top: 40rpx;
+  color: black;
+  margin-bottom: 20rpx;
+}
+.h1{
+  
+  background-size: cover;
+  height: 40rpx;
+  width:100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  padding-top: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: 30rpx;
+}
+
+.img-plus-style1 {  
+  height: 70rpx;  
+  width: 70rpx;  
+  position: fixed;  
+  bottom: 330rpx;  
+  right: 30rpx;   
+  opacity: 0.7
+}  
+.pinzhi{
+  width: 25%;
+  height: 50rpx;
+  float: left;
+  padding-top:20rpx;
+  padding-bottom:20rpx;
+  text-align: center;
+}
+.dengstyle{
+  background-image: url("http://515029.s81i.faiusr.com/4/101/AFEI1bcfEAQYACDqi43hBSi_2NS5BzDuBTi7B0Bl.png");
+  width: 100%;
+  height: 910rpx;
+  background-size: 100% 100%;
+  margin-bottom: 20rpx;
+}
+.dengstylekuan{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 30rpx;
+  float: left;
+  width: 50%;
+  height: 250rpx;
+  
+}
+.dengstyletu{
+  float: left;
+  width: 50%;
+  height: 250rpx;
+  
+}

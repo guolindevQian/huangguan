@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/product/product",
+    "pages/xiang/xiang",
+    "pages/contact/contact",
+    "pages/xiangqing/xiangqing"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "皇冠",
+    "navigationBarTextStyle": "black"
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx0ef50b46024c2c87"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/home.png",
+        "selectedIconPath": "icon/home-select.png"
+      },
+      {
+        "pagePath": "pages/product/product",
+        "text": "产品",
+        "iconPath": "icon/classification.png",
+        "selectedIconPath": "icon/classification-select.png"
+      },
+
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系我们",
+        "iconPath": "icon/contact.png",
+        "selectedIconPath": "icon/contact-select.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
